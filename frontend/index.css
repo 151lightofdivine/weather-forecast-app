@@ -1,0 +1,139 @@
+/* Reset and base */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.6s ease-in-out, background-color 0.6s;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+
+.container {
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 15px;
+  background-color: #333333;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: #444444;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6200ea;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #3700b3;
+  transform: translateY(-2px);
+}
+
+
+#auth-msg,
+#subscribe-msg,
+#error-message {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+#error-message {
+  color: #ff5722;
+}
+
+#auth-msg {
+  color: #00e676;
+}
+
+#subscribe-msg {
+  color: #03a9f4;
+}
+
+
+.hidden {
+  display: none;
+}
+
+#weather-info {
+  margin-top: 20px;
+}
+
+#weather-info h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+#weather-info p {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+
+#auth-form,
+#city-form,
+#weather-app {
+  margin-bottom: 20px;
+}
+
+.toggle-link { cursor:pointer; color:#03a9f4; text-decoration:underline; }
+.hidden { display:none; }
